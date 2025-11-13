@@ -5,6 +5,9 @@ const Landing: React.FC = () => {
         <div className="p-8">
             <h1 className="text-xl font-extralight mb-4">Landing Page</h1>
             <Card />
+            <Card />
+            <Card />
+            <Card />
         </div>
     )
 }
