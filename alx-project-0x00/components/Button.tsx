@@ -4,6 +4,7 @@ const Button: React.FC<ButtonProps> = ({
     title, 
     size = 'medium', 
     shape = 'rounded-md',
+    styles = '',
     className = ''
 }) => {
     // Size styles
@@ -19,6 +20,7 @@ const Button: React.FC<ButtonProps> = ({
             ${shape}
             bg-blue-500 text-white font-medium
             hover:bg-blue-600 transition-colors
+            ${styles}
             ${className}
         `}>
             {title}

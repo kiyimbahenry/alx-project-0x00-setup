@@ -14,40 +14,37 @@ const Landing: React.FC = () => {
                 <h2 className="text-lg font-semibold">Button Variations</h2>
                 
                 {/* Size Variations */}
-                <div className="space-x-2">
+                <div className="space-x-2 mb-4">
                     <Button title="Small Button" size="small" />
                     <Button title="Medium Button" size="medium" />
                     <Button title="Large Button" size="large" />
                 </div>
                 
-                {/* Shape Variations */}
-                <div className="space-x-2">
+                {/* Shape Variations - INCLUDING rounded-lg */}
+                <div className="space-x-2 mb-4">
                     <Button title="Rounded Small" shape="rounded-sm" />
                     <Button title="Rounded Medium" shape="rounded-md" />
+                    <Button title="Rounded Large" shape="rounded-lg" /> {/* Added this line */}
                     <Button title="Rounded Full" shape="rounded-full" />
                 </div>
                 
-                {/* Combination of Size and Shape */}
-                <div className="space-x-2">
-                    <Button title="Small & Full" size="small" shape="rounded-full" />
-                    <Button title="Large & Small" size="large" shape="rounded-sm" />
-                    <Button title="Medium & Full" size="medium" shape="rounded-full" />
+                {/* Using styles prop */}
+                <div className="space-x-2 mb-4">
+                    <Button 
+                        title="Styled Button 1" 
+                        styles="bg-gradient-to-r from-purple-500 to-pink-500 text-white" 
+                    />
+                    <Button 
+                        title="Styled Button 2" 
+                        styles="border-2 border-green-500 text-green-500 bg-transparent hover:bg-green-500 hover:text-white" 
+                    />
                 </div>
                 
-                {/* With Custom Styles */}
-                <div className="space-x-2">
-                    <Button 
-                        title="Custom Red" 
-                        size="medium" 
-                        shape="rounded-full" 
-                        className="bg-red-500 hover:bg-red-600" 
-                    />
-                    <Button 
-                        title="Custom Green" 
-                        size="large" 
-                        shape="rounded-md" 
-                        className="bg-green-500 hover:bg-green-600" 
-                    />
+                {/* Combination of Size and Shape */}
+                <div className="space-x-2 mb-4">
+                    <Button title="Small & Full" size="small" shape="rounded-full" />
+                    <Button title="Large & Large" size="large" shape="rounded-lg" /> {/* Added this line */}
+                    <Button title="Medium & Full" size="medium" shape="rounded-full" />
                 </div>
             </div>
         </div>
